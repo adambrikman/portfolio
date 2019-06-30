@@ -1,0 +1,54 @@
+.header {
+    height: 60vh;
+    width: 100%;
+    color: $color-white;
+    font-weight: 500;
+    text-shadow: .5px .5px black;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(#B29600, 0.7), 
+        rgba(#85714d, 0.7));
+
+    &__shape {
+        padding: 2rem;
+        position: relative;
+        font-size: 3rem;
+        font-weight: 400;        
+    }
+
+    &__img {
+        @include clearfix;
+        background-color: $color-white; // TEMPORARY
+        width: 5rem;
+        height: 5rem;
+        float: left;
+        border-radius: 50%;
+
+        @supports (clip-path: polygon(0 0) or (-webkit-clip-path: polygon(0 0)) ) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;    
+        }
+    }
+
+    &__caption {
+        &-firstName {
+            padding-left: 1rem;
+            font-weight: 700;
+        }
+    }
+    
+    &__title {
+        font-size: 4rem;
+        font-weight: 900;
+        text-align: center;
+        display: block;
+    }
+    
+    &__subtext {
+        font-size: $default-font-size;    
+    }
+
+}
