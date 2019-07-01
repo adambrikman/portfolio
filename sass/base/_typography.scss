@@ -12,7 +12,6 @@ body {
 }
 
 .heading-primary {
-    font-size: $default-font-size;
  
     &--intro {
         animation: moveInLeft .8s ease-out, disappear .8s ease-out 2.1s forwards;
@@ -36,7 +35,11 @@ body {
     &--sub {
         animation: moveInBottom .7s ease-out 2s backwards;
         display: block;
+        font-size: $default-font-size;
         letter-spacing: .3rem;
     }
 }
 
+.heading-secondary {
+
+}

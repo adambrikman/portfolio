@@ -15,10 +15,14 @@
     }
 
     &:hover {
-        transform: translateY(-3px);
-        color: $color-white;
-        background-color: $color-primary;
+        // background-color: $color-primary;
+        background-image: linear-gradient(
+            to right bottom, 
+            rgba(#B29600, 0.8), 
+            rgba(#85714d, 0.8));
         box-shadow: 0 1rem 2rem  rgba($color-black,.2);
+        color: $color-white;
+        transform: translateY(-3px);
     }
     
     &:active,
@@ -39,7 +43,7 @@
     }
 
     &--animated {
-        animation: appear 1s ease-out 3.5s backwards;
+        animation: appear .9s ease-out 3.3s backwards;
     }
 
 }
