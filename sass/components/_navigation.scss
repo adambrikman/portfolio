@@ -4,18 +4,22 @@
         list-style-type: none;
         font-size: $default-font-size;
         position: fixed;
-        color: $color-white;
+        color: $color-grey-dark-3;
         top: 6.5rem;
         right: 6.5rem;
         text-shadow: .5px .5px black;
 
         &--item {
-
             float: right;
             font-weight: 500;
             display: inline-block;
             &:not(:last-child) {
                 padding-left: 2rem;
+            }
+
+            &:hover {
+                color: $color-primary;
+                cursor: pointer;
             }
         }
 

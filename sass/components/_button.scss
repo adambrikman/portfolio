@@ -1,0 +1,45 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        border-radius: 10rem;
+        display: inline-block;
+        font-size: $default-font-size;
+        letter-spacing: .3rem;
+        padding: 1rem 3rem;
+        text-decoration: none;
+        transition: all .3s;
+
+        // Change for the <button> element
+        cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        color: $color-white;
+        background-color: $color-primary;
+        box-shadow: 0 1rem 2rem  rgba($color-black,.2);
+    }
+    
+    &:active,
+    /* &:focus */ {
+        // outline: none;
+        box-shadow: 0 .5rem 1rem  rgba($color-black, 0.2);
+        transform: translateY(-1px);
+    }
+
+    // Style the gold button
+    &--gold {
+        border: 1px solid $color-primary-dark;
+        color: $color-grey-dark-3;
+
+        &::after{
+            border: 1px solid $color-primary-dark;
+        }
+    }
+
+    &--animated {
+        animation: appear 1s ease-out 3.5s backwards;
+    }
+
+}

@@ -2,4 +2,41 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     line-height: 1.7;
+    color: $color-grey-dark-3;
 }
+
+.header {
+    &__text-box {
+        text-align: center;
+    }
+}
+
+.heading-primary {
+    font-size: $default-font-size;
+ 
+    &--intro {
+        animation: moveInLeft .8s ease-out, disappear .8s ease-out 2.1s forwards;
+        display: block;
+        font-size: 5rem;
+        height: 8rem;
+        padding-left: 10rem;
+    }
+
+    &--main {
+        animation: moveInBottom .8s ease-out 1s backwards;
+        display: block;
+        font-size: 8rem;
+        font-weight: 700;
+        text-shadow: .5px .5px black;
+        &-1 {
+            font-weight: 400;
+        }
+    }
+
+    &--sub {
+        animation: moveInBottom .7s ease-out 2s backwards;
+        display: block;
+        letter-spacing: .3rem;
+    }
+}
+

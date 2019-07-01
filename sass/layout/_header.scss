@@ -1,54 +1,48 @@
 .header {
-    height: 60vh;
-    width: 100%;
-    color: $color-white;
+    border-radius: 3px;
     font-weight: 500;
-    text-shadow: .5px .5px black;
-    background-image: linear-gradient(
-        to right bottom, 
-        rgba(#B29600, 0.7), 
-        rgba(#85714d, 0.7));
+    height: 70vh;
+    width: 100%;
+    padding-bottom: 30rem;
+    position: relative;
+
+    // background-image: linear-gradient(
+    //     to right bottom, 
+    //     rgba(#B29600, 0.8), 
+    //     rgba(#85714d, 0.8));
+    // background-position: top;
+    // border: 1px solid #85714d;
 
     &__shape {
-        padding: 2rem;
-        position: relative;
         font-size: 3rem;
         font-weight: 400;        
+        padding: 2rem;
+        position: relative;
     }
 
     &__img {
         @include clearfix;
         background-color: $color-white; // TEMPORARY
-        width: 5rem;
-        height: 5rem;
-        float: left;
         border-radius: 50%;
+        float: left;
+        height: 5rem;
+        width: 5rem;
 
         @supports (clip-path: polygon(0 0) or (-webkit-clip-path: polygon(0 0)) ) {
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: none;    
             -webkit-clip-path: circle(50% at 50% 50%);
             clip-path: circle(50% at 50% 50%);
             -webkit-shape-outside: circle(50% at 50% 50%);
-            shape-outside: circle(50% at 50% 50%);
-            border-radius: none;    
         }
     }
 
     &__caption {
         &-firstName {
-            padding-left: 1rem;
             font-weight: 700;
+            padding-left: 1rem;
         }
-    }
-    
-    &__title {
-        font-size: 4rem;
-        font-weight: 900;
-        text-align: center;
-        display: block;
-    }
-    
-    &__subtext {
-        font-size: $default-font-size;    
     }
 
 }
+
