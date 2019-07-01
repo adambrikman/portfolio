@@ -41,5 +41,37 @@ body {
 }
 
 .heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
 
+    &:hover {
+       transition: .4s ease-out;
+       background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
+       -webkit-background-clip: text;
+       color: transparent;    
+    }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    letter-spacing: .2rem;
+    text-align: left;
+    word-wrap: break-word;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
 }
