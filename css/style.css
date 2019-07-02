@@ -139,12 +139,6 @@ body {
     border-radius: 30px;
     height: 22rem;
     padding-bottom: 20rem; }
-    .box__picture--1 {
-      background-image: url(../img/number1.jpg); }
-    .box__picture--2 {
-      background-image: url(../img/number2.jpg); }
-    .box__picture--3 {
-      background-image: url(../img/number3.jpg); }
   .box__heading {
     padding-top: 4rem;
     font-size: 2rem;
