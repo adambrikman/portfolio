@@ -86,11 +86,6 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block; }
-  .heading-secondary:hover {
-    transition: .4s ease-out;
-    background-image: linear-gradient(to right, #B29600, #85714d);
-    -webkit-background-clip: text;
-    color: transparent; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -133,6 +128,41 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.box {
+  background-color: #F7F7F7;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  height: 55rem; }
+  .box__picture {
+    background-size: cover;
+    background-blend-mode: screen;
+    border-radius: 30px;
+    height: 22rem;
+    padding-bottom: 20rem; }
+    .box__picture--1 {
+      background-image: url(../img/number1.jpg); }
+    .box__picture--2 {
+      background-image: url(../img/number2.jpg); }
+    .box__picture--3 {
+      background-image: url(../img/number3.jpg); }
+  .box__heading {
+    padding-top: 4rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #B29600;
+    width: 98%;
+    text-transform: uppercase; }
+  .box__details {
+    padding: 3rem; }
+    .box__details ul {
+      list-style-type: none;
+      padding-bottom: 3rem; }
+    .box__details li {
+      font-size: 1.6rem;
+      padding: 1rem;
+      text-align: center; }
+      .box__details li:not(:last-child) {
+        border-bottom: 1px solid #eee; }
 
 .btn, .btn:link, .btn:visited {
   border-radius: 10rem;
