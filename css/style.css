@@ -105,6 +105,19 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.fa-2x {
+  transition: all .4s; }
+  .fa-2x.fa-html5:hover {
+    color: #ee632c; }
+  .fa-2x.fa-css3-alt:hover {
+    color: #3a9cd6; }
+  .fa-2x.fa-sass:hover {
+    color: #c96195; }
+  .fa-2x.fa-js-square:hover {
+    color: #cdb12e; }
+  .fa-2x.fa-node-js:hover {
+    color: #669f64; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -187,6 +200,60 @@ body {
 .btn--animated {
   animation: appear .9s ease-out 3.3s backwards; }
 
+.form__group {
+  margin: 0 auto;
+  width: 40rem; }
+
+.form__text {
+  color: inherit;
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+  margin: .6rem auto;
+  width: 100%; }
+
+.form__input {
+  border: none;
+  border-bottom: 0.5px solid #3D4C53;
+  color: inherit;
+  padding: .5rem .5rem;
+  transform: translateY(0.5rem); }
+  .form__input:focus:placeholder-shown + .form__label {
+    color: #B29600;
+    opacity: 1;
+    transform: translateY(-4.5rem); }
+  .form__input::-webkit-input-placeholder {
+    color: #B29600; }
+
+.form__label {
+  color: #3D4C53;
+  display: block;
+  font-size: 1rem;
+  opacity: 0;
+  padding-left: .5rem;
+  text-align: left;
+  transform: translateY(-2.5rem);
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); }
+  .form__label--message {
+    color: #a1a8ab;
+    display: block;
+    text-align: left;
+    padding-left: .5rem;
+    transform: translateY(-23rem); }
+
+.form__message {
+  margin-top: 3rem;
+  min-height: 20rem;
+  resize: horizontal; }
+  .form__message:focus + .form__label--message {
+    color: #B29600;
+    transform: translateY(2);
+    transition: all .2s ease-out;
+    opacity: 1; }
+
+.form__submit {
+  margin-top: 1rem; }
+
 .nav__list {
   font-size: 1.6rem;
   position: absolute;
@@ -194,15 +261,17 @@ body {
   right: 6.5rem; }
   .nav__list--item {
     color: #3D4C53;
+    display: inline-block;
     float: right;
     font-weight: 500;
-    display: inline-block;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all .2s ease-in; }
     .nav__list--item:not(:last-child) {
       padding-left: 2rem; }
     .nav__list--item:hover {
       color: #B29600;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all .2s ease-out; }
 
 .about-me__img {
   width: 90%;

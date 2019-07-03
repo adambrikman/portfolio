@@ -75,3 +75,27 @@ body {
         margin-bottom: 3rem;
     }
 }
+
+.fa-2x {
+    transition: all .4s;
+
+    &.fa-html5:hover {
+        color: #ee632c;
+    }
+
+    &.fa-css3-alt:hover {
+        color: #3a9cd6;
+    }
+    
+    &.fa-sass:hover {
+        color: #c96195;
+    }
+    
+    &.fa-js-square:hover {
+        color: #cdb12e;
+    }
+    
+    &.fa-node-js:hover {
+        color: #669f64;
+    } 
+}
