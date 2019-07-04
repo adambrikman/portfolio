@@ -159,37 +159,49 @@
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="blurb u-margin-bottom-medium">Feel free to check out my other work:</div>
+                    <a href="#">
+                        <i class="fab fa-4x fa-github u-left-right-margins-medium"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-4x fa-codepen u-left-right-margins-medium"></i>
+                    </a>
+                </div>
+
             </section>
 
             <section class="section-contact u-center-text" id="contact">
 
                 <div class="contact__form">
-                    <div class="u-margin-top-huge u-margin-bottom-medium">
+                    <div class="u-margin-top-huge u-margin-bottom-small">
                             <h2 class="heading-secondary">
                                 Contact Me
                             </h2>
                     </div>
+                    <p class="contact__form--text blurb u-center-text">I am currently seeking out a software developer position. Feel free to contact me via <a href="" class="outbound-link">LinkedIn</a> or send me an e-mail below:</p>
                 </div>
 
                 <form action="https://formspree.io/adambrikman@gmail.com" method="POST" /" class="form">
 
                     <div class="form__group">
-                        <input type="text" class="form__input form__text" onfocus="this.placeholder=''" onblur="this.placeholder='Name*'" placeholder="Name*" id="name" name="name" required>
-                        <label for="name" class="form__label">Name*</label>
+                        <input type="text" class="form__input form__text" placeholder="&nbsp;" id="name" name="name" required>
+                        <label for="name" class="form__label">&nbsp;Name*</label>
                     </div>
 
                     <div class="form__group">
-                        <input type="email" class="form__input form__text" onfocus="this.placeholder=''" onblur="this.placeholder='E-mail address*'" placeholder="E-mail address*" id="email" name="name" required>
+                        <input type="email" class="form__input form__text" placeholder="&nbsp;" id="email" name="name" required>
                         <label for="email" class="form__label">E-mail address*</label>
                     </div>
 
                     <div class="form__group">
-                        <!-- <label for="message" class="form__label">Message*</label> -->
                         <textarea rows="4" cols="30" class="form__message form__text" id="message" name="name" required></textarea>
                         <label for="message" class="form__label--message">Message*</label>
                     </div>
                     
-                    <button class="form__submit">Send message</button>
+                    <button class="form__submit btn btn--gold btn--email"> Send e-mail 
+                        <i class="far fa-paper-plane"></i>
+                    </button>
 
                 </form>
 

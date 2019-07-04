@@ -1,10 +1,8 @@
 .box {
-    background-color: $color-grey-light-1;
-    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    background-color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
     height: 55rem;
-
-    // &__project {
-    // }
+    border: 1px solid $color-grey-light-2;
 
     &__picture {
         background-size: cover;
@@ -37,12 +35,12 @@
     }
 
     &__heading {
-        padding-top: 4rem;
+        width: 98%;
         font-size: 2rem;
         font-weight: 400;
-        color: $color-primary;
-        width: 98%;
+        padding-top: 4rem;
         text-transform: uppercase;
+        width: 98%;
 
     }
 

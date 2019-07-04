@@ -15,60 +15,74 @@
     }
 
     &__input {
-        border: none;
-        border-bottom: .5px solid $color-grey-dark-3;
-        color: inherit;
-        padding: .5rem .5rem;
-        transform: translateY(.5rem);
-        // transition:  0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
-        &:focus {
-            &:placeholder-shown + .form__label {
-                color: $color-primary;
-                opacity: 1;
-                transform: translateY(-4.5rem);
+        &:empty {
+            &:placeholder-shown ~.form__label {
+                color: $color-grey-light-3;
+                transform: translateY(-2rem);
             }
         }
 
-        &::-webkit-input-placeholder {
-            color: $color-primary;
+        border: none;
+        border-bottom: .5px solid $color-grey-light-3;
+        color: inherit;
+        padding: .5rem .5rem;
+        transform: translateY(.5rem);
+
+        &:focus {
+            &:placeholder-shown ~ .form__label {
+                color: $color-primary;
+                transform: translateY(-4.5rem);
+            }
         }
     }
 
     &__label {
-        color: $color-grey-dark-3;
         display: block;
         font-size: $small-font-size;
-        opacity: 0;
         padding-left: .5rem;
         text-align: left;
-        transform: translateY(-2.5rem);
-        transition:  0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        transition:  .3s cubic-bezier(0.65, -0.5, 0.25, 1.6);
 
         &--message {
-            color: #a1a8ab;
+            color: $color-grey-light-3;
             display: block;
-            text-align: left;
             padding-left: .5rem;
+            text-align: left;
             transform: translateY(-23rem);
+            transition: all .3s ease-out;
         }
 
     }
 
     &__message {
-        margin-top: 3rem;
+        border-radius: 3px;
+        margin-top: 2.5rem;
+        max-width: 100%;
         min-height: 20rem;
-        resize: horizontal;
+        padding: 5px;
+        resize: none;
 
         &:focus + .form__label--message {
-                color: $color-primary;
-                transform: translateY(2);
-                transition: all .2s ease-out;
-                opacity: 1;
-            }
+            color: $color-primary;
+            transform: translateY(2);
+            transition: all .2s ease-out;
+        }
     }
 
-    &__submit {
-        margin-top: 1rem;
+    input:valid,
+    input:invalid {
+
+        & ~ .form__label {
+            color: $color-primary;
+            transform: translateY(-4.5rem);    
+        }
+    }
+
+    textarea:valid {
+
+        & ~ label {
+            color: $color-primary;
+        }
     }
 }
