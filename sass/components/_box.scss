@@ -1,6 +1,7 @@
 .box {
+    @include addShadow;
+
     background-color: $color-white;
-    box-shadow: 0 1rem 2rem rgba($color-black, .2);
     height: 55rem;
     border: 1px solid $color-grey-light-2;
 

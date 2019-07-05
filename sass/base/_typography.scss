@@ -61,6 +61,7 @@ body {
     -webkit-hyphens: auto;
     hyphens: auto;
     letter-spacing: .2rem;
+    line-height: 1.9;
     text-align: left;
     word-wrap: break-word;
 
@@ -70,7 +71,7 @@ body {
 }
 
 .fa-2x {
-    transition: all .4s;
+    transition: all .3s ease-out;
 
     &.fa-html5:hover {
         color: #ee632c;
