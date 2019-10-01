@@ -21,7 +21,7 @@
 
             <figure class="header__shape">
 
-                <a href="https://www.linkedin.com/in/adambrikman/" target="_blank"">
+                <a href="https://www.linkedin.com/in/adambrikman/" target="_blank">
                     <img src="img/pro_pic.jpg" alt="Professional headshot of Adam Brikman" class="header__img">
                     <figcaption class="header__caption">
                         <span class="header__caption-firstName">
@@ -31,6 +31,17 @@
                     </figcaption>                    
                 </a>
             </figure>
+
+            <nav class="nav">
+                <label class="navBurger" for="toggle">&#9776;</label>
+                <span class="nav__list">
+                    <ul class="menu">
+                        <a href="#about" class="nav__list--item">About</a>
+                        <a href="#projects" class="nav__list--item">Projects</a>
+                        <a href="#contact" class="nav__list--item">Contact</a>
+                    </ul>
+                </span>
+            </nav>
 
             <div class="header__text-box">
                 <h1 class="heading-primary">
@@ -111,7 +122,7 @@
 
                 <div class="u-margin-top-huge">
                     <h2 class="heading-secondary u-margin-bottom-medium">
-                        Recent Projects
+                        Featured Projects
                     </h2>
                 </div>
 
@@ -123,7 +134,7 @@
                                     &nbsp;
                                 </div>
                                 <h4 class="box__heading">
-                                    <span class="box__heading-span box__heading-span--1">Naxos URL Shortener
+                                    <span class="box__heading-span box__heading-span--1">URL Shortener
                                     </span>
                                 </h4>
                                 <div class="box__details">
@@ -132,10 +143,11 @@
                                             <i class="fab fa-2x fa-node-js"></i>
                                             <i class="fab fa-2x fa-js-square"></i>
                                             <i class="fab fa-2x fa-html5"></i>
-                                            <i class="fab fa-2x fa-sass"></i>
+                                            <i class="fab fa-2x fa-css3-alt"></i>
                                         </li>
                                     </ul>
-                                    <a href="#popup-1" class="btn btn--gold">Learn more</a>
+                                    <a href="#" class="btn btn--gold u-margin-bottom-small">Demo</a>
+                                    <a href="#" class="btn btn--gold">View code</a>
                                 </div>
                             </div>
                         </div>
@@ -148,18 +160,20 @@
                                     &nbsp;
                                 </div>
                                 <h4 class="box__heading">
-                                    <span class="box__heading-span box__heading-span--1">Vanilla Calculator
+                                    <span class="box__heading-span box__heading-span--1">Book Tracker
                                     </span>
                                 </h4>
                                 <div class="box__details">
                                     <ul>
                                         <li>
-                                            <i class="fab fa-2x fa-js-square"></i>
-                                            <i class="fab fa-2x fa-html5"></i>
+                                            <i class="fas fa-2x fa-leaf"></i>
+                                            <i class="fab fa-2x fa-node-js"></i>
+                                            <i class="fab fa-2x fa-react"></i>
                                             <i class="fab fa-2x fa-css3-alt"></i>
                                         </li>
                                     </ul>
-                                    <a href="#popup-2" class="btn btn--gold">Learn more</a>
+                                    <a href="#" class="btn btn--gold u-margin-bottom-small">Demo</a>
+                                    <a href="#" class="btn btn--gold">View code</a>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +186,7 @@
                                     &nbsp;
                                 </div>
                                 <h4 class="box__heading">
-                                    <span class="box__heading-span box__heading-span--1">Random Quote Generator
+                                    <span class="box__heading-span box__heading-span--1">D3 Choropleth Map
                                     </span>
                                 </h4>
                                 <div class="box__details">
@@ -183,7 +197,8 @@
                                             <i class="fab fa-2x fa-css3-alt"></i>
                                         </li>
                                     </ul>
-                                    <a href="#popup-3" class="btn btn--gold">Learn more</a>
+                                    <a href="#" class="btn btn--gold u-margin-bottom-small">Demo</a>
+                                    <a href="#" class="btn btn--gold">View code</a>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +228,7 @@
                     <p class="contact__form--text blurb u-center-text">I am currently seeking out a software developer position. Feel free to contact me via <a href="https://www.linkedin.com/in/adambrikman/" target="_blank" class="outbound-link">LinkedIn</a> or send me an e-mail below:</p>
                 </div>
 
-                <form action="https://formspree.io/adambrikman@gmail.com" method="POST" /" class="form">
+                <form action="https://formspree.io/adambrikman@gmail.com" method="POST" class="form">
 
                     <div class="form__group">
                         <input type="text" class="form__input form__text" placeholder="&nbsp;" id="name" name="name" required>
@@ -238,52 +253,9 @@
 
         </main>
 
-        <div id="invisibleDiv">
-            <div class="popup" id="popup-1">
-                    <div class="popup__content">
-                        <div class="popup__left">
-                            <img src="img/dog_chew.gif" alt="URL Shortener GIF" class=popup__img>
-                        </div>
-                        <div class="popup__right">
-                            <a href="#section-projects" class="popup__close">&times;</a>
-                            <h2 class="heading-secondary u-margin-bottom-small">URL Shortener</h2>
-                            <h3 class="heading-tertiary u-margin-bottom-small">About my URL Shortener project</h3>
-                            <p class="popup__text">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo mollitia possimus voluptate et illum debitis quibusdam impedit, magnam corrupti autem, itaque fugit. Repellendus vel facere harum dolorem, error laborum praesentium.
-                            </p>
-                            <a href="#" class="btn btn--gold u-margin-bottom-small">Demo</a>
-                            <a href="#" class="btn btn--gold">View code</a>
-                        </div>
-                    </div>
-                </div>
-            
-        </div>
-        <!-- <div class="popup" id="popup-1">
-            <div class="popup__content">
-                <div class="popup__left">
-                    <img src="#" alt="URL Shortener GIF" class=popup__img>
-                </div>
-                <div class="popup__right">
-                    <a href="#section-projects" class="popup__close">&times;</a>
-                    <h2 class="heading-secondary u-margin-bottom-small">URL Shortener</h2>
-                    <h3 class="heading-tertiary u-margin-bottom-small">About my URL Shortener project</h3>
-                    <p class="popup__text">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo mollitia possimus voluptate et illum debitis quibusdam impedit, magnam corrupti autem, itaque fugit. Repellendus vel facere harum dolorem, error laborum praesentium.
-                    </p>
-                    <a href="#" class="btn btn--gold">Demo</a>
-                </div>
-            </div>
-        </div> -->
-
     </body>
-    <nav class="nav">
-        <ul class="nav__list">
-            <a href="#contact" class="nav__list--item">Contact</a>
-            <a href="#projects" class="nav__list--item">Projects</a>
-            <a href="#about" class="nav__list--item">About</a>
-        </ul>
-    </nav>
 
+    
     <script type="text/javascript" src="js/scripts.js"></script>
 
 </html>

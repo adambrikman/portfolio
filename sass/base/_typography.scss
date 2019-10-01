@@ -1,131 +1,177 @@
 body {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    line-height: 1.7;
-    color: $color-grey-dark-3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 1.7;
+  color: $color-grey-dark-3;
 }
 
 .header {
-    &__text-box {
-        text-align: center;
-    }
+  &__text-box {
+    text-align: center;
+  }
 }
 
 .heading-primary {
- 
-    &--intro {
-        animation: moveInLeft .8s ease-out, disappear .8s ease-out 2.1s forwards;
-        display: block;
-        font-size: 5rem;
-        height: 8rem;
-        padding-left: 10rem;
-    }
+  &--intro {
+    animation: moveInLeft 0.8s ease-out, disappear 0.8s ease-out 2.1s forwards;
+    display: block;
+    font-size: 5rem;
+    height: 8rem;
+    padding-left: 10rem;
+  }
 
-    &--main {
-        animation: moveInBottom .8s ease-out 1s backwards;
-        display: block;
-        font-size: 8rem;
-        font-weight: 700;
-        text-shadow: .5px .5px black;
-        &-1 {
-            font-weight: 400;
-        }
+  &--main {
+    animation: moveInBottom 0.8s ease-out 1s backwards;
+    display: block;
+    font-size: 8rem;
+    font-weight: 700;
+    text-shadow: 0.5px 0.5px black;
+    &-1 {
+      font-weight: 400;
     }
+  }
 
-    &--sub {
-        animation: moveInBottom .7s ease-out 2s backwards;
-        display: block;
-        font-size: $default-font-size;
-        letter-spacing: .3rem;
-    }
+  &--sub {
+    animation: moveInBottom 0.7s ease-out 2s backwards;
+    display: block;
+    font-size: $default-font-size;
+    letter-spacing: 0.3rem;
+  }
 }
 
 .heading-secondary {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
 }
 
 .heading-tertiary {
-    font-size: $default-font-size;
-    font-weight: 700;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
+  font-size: $default-font-size;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 .paragraph {
-    font-size: $default-font-size;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-    letter-spacing: .2rem;
-    line-height: 1.9;
-    text-align: left;
-    word-wrap: break-word;
+  font-size: $default-font-size;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  letter-spacing: 0.2rem;
+  line-height: 1.9;
+  text-align: left;
+  word-wrap: break-word;
 
-    &:not(:last-child) {
-        margin-bottom: 3rem;
-    }
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }
 
 .fa-2x {
-    transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-right: 1.5rem;
 
-    &.fa-html5:hover {
-        color: #ee632c;
-    }
+  &.fa-html5:hover {
+    color: #ee632c;
+  }
 
-    &.fa-css3-alt:hover {
-        color: #3a9cd6;
-    }
-    
-    &.fa-sass:hover {
-        color: #c96195;
-    }
-    
-    &.fa-js-square:hover {
-        color: #cdb12e;
-    }
-    
-    &.fa-node-js:hover {
-        color: #669f64;
-    } 
+  &.fa-css3-alt:hover,
+  &.fa-2x.fa-react:hover {
+    color: #3a9cd6;
+  }
+
+  &.fa-sass:hover {
+    color: #c96195;
+  }
+
+  &.fa-js-square:hover {
+    color: #cdb12e;
+  }
+
+  &.fa-node-js:hover,
+  &.fa-2x.fa-leaf:hover {
+    color: #669f64;
+  }
+
+  @include respond(tab-port) {
+    font-size: 6rem;
+  }
 }
 
 .fa-4x {
-    transition: all .3s ease-out;
-    &:hover {
-        transition: all .3s ease-out;
-        color: $color-primary;
+  transition: all 0.3s ease-out;
+  &:hover {
+    transition: all 0.3s ease-out;
+    color: $color-primary;
+  }
+
+  @include respond(tab-port) {
+    font-size: 6rem;
+  }
+}
+
+.box {
+  &__heading {
+    @include respond(tab-port) {
+      font-size: 4rem !important;
     }
+  }
+}
+
+.box__details {
+  a {
+    @include respond(tab-port) {
+      margin-right: 1.5rem !important;
+
+      font-size: 2rem !important;
+    }
+  }
 }
 
 a {
-    color: $color-grey-dark-3;
-    text-decoration: none;
+  color: $color-grey-dark-3;
+  text-decoration: none;
 }
 
 .blurb {
-    font-size: $default-font-size;
+  font-size: $default-font-size;
 }
 
 .contact {
-    &__form--text {
-        display: inline-block;
-        max-width: 35vw;
-        padding-bottom: 2rem;
+  &__form--text {
+    display: inline-block;
+    max-width: 35vw;
+    padding-bottom: 2rem;
+
+    @include respond(tab-land) {
+      max-width: 60vw;
     }
 
+    @include respond(phone) {
+      max-width: 70vw;
+    }
+  }
 }
 
 .outbound-link {
-    color: $color-grey-light-3;
-    transition: all .3s ease-out;
+  color: $color-grey-light-3;
+  transition: all 0.3s ease-out;
 
-    &:hover {
-        color: $color-primary;
-        transition: all .3s ease-out;
+  &:hover {
+    color: $color-primary;
+    transition: all 0.3s ease-out;
+  }
+}
+
+.form {
+  &__text,
+  &__label--message {
+    font-size: $small-font-size;
+
+    @include respond(phone) {
+      font-size: $medium-font-size;
     }
+  }
 }

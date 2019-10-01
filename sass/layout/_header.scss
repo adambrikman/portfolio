@@ -30,6 +30,8 @@
     }
 
     &__caption {
+        float: left;
+
         &-firstName {
             font-weight: 700;
             padding-left: 1rem;
