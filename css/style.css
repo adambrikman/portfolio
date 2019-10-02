@@ -149,7 +149,8 @@ body {
     color: #669f64; }
   @media (max-width: 56.25em) {
     .fa-2x {
-      font-size: 6rem; } }
+      font-size: 5rem;
+      margin-top: -3rem; } }
 
 .fa-4x {
   transition: all 0.3s ease-out; }
@@ -238,9 +239,20 @@ a {
   .box__picture {
     background-size: cover;
     background-blend-mode: screen;
-    border-radius: 30px;
-    height: 22rem;
+    border-radius: 10px;
     padding-bottom: 20rem; }
+    .box__picture--1, .box__picture--2, .box__picture--3 {
+      margin: 0 auto;
+      margin-top: 2rem;
+      width: 95%;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .box__picture--1 {
+      background-image: url(../../img/GIFs/url_shortener.gif); }
+    .box__picture--2 {
+      background-image: url(../../img/GIFs/book_tracker.gif); }
+    .box__picture--3 {
+      background-image: url(../../img/GIFs/choropleth_map.gif); }
   .box__heading {
     width: 98%;
     font-size: 2rem;
@@ -398,67 +410,6 @@ a {
     margin: 0;
     padding-top: 1rem; } }
 
-.popup {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  opacity: 0;
-  visibility: hidden;
-  transition: all .3s ease-out; }
-  .popup:target {
-    opacity: 1;
-    visibility: visible;
-    transition: all .3s ease-out; }
-  .popup__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    display: table;
-    width: 100rem;
-    overflow: hidden;
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.25);
-    transition: all .3s .2s ease-out; }
-  .popup__left {
-    width: 70rem;
-    height: auto;
-    float: left;
-    display: table-cell; }
-  .popup__right {
-    width: 30rem;
-    float: left;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 3rem 5rem; }
-  .popup__img {
-    display: block;
-    width: 100%; }
-  .popup:target .popup__content {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1); }
-  .popup__close:link, .popup__close:visited {
-    color: #3d4c53;
-    position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
-    font-size: 3rem;
-    display: inline-block;
-    transition: all .3s ease-out;
-    line-height: 1; }
-  .popup__close:hover {
-    transition: all .3s ease-out;
-    color: #b29600; }
-  .popup__text {
-    font-size: 1.4rem;
-    margin-bottom: 4rem; }
-
 .about-me__img {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
@@ -466,6 +417,21 @@ a {
   height: auto;
   margin: 0 auto;
   width: 70%; }
+
+.grid {
+  display: grid; }
+
+.first {
+  order: 2 !important; }
+
+.second {
+  order: 1 !important; }
+
+.third {
+  order: 4; }
+
+.fourth {
+  order: 3; }
 
 .row {
   max-width: 114rem;

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85718065-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-85718065-2');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -67,12 +77,12 @@
                         About Me
                     </h2>            
                 </div>
-
+                
                 <div class="row">
-                    <div class="col-1-of-2">
+                    <div class="col-1-of-2 first">
                         <img src="img/paris.jpg" alt="Adam at Notre Dame Cathedral" class="about-me__img">
                     </div>
-                    <div class="col-1-of-2">
+                    <div class="col-1-of-2 second">
                         <h3 class="heading-tertiary u-center-text u-margin-bottom-small">Hey! I'm Adam</h3>
 
                         <p class="paragraph">I was born and raised in Las Vegas, NV. I graduated in 2015 with a Masters in Accounting. Shortly after graduating, I passed the CPA exams and began working at a top public accounting firm.
@@ -93,7 +103,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-1-of-2">
+                    <div class="col-1-of-2 third">
                         <h3 class="heading-tertiary u-center-text u-margin-bottom-small">Fast-forward to now</h3>
                         <p class="paragraph">CS50 changed my life because it changed the way I approached problem solving. It was through the challenges in the course that I fell in love with programming.
                         </p>
@@ -110,12 +120,11 @@
                         When I'm not programming, I'm traveling, exercising or eating.
                         </p>
                     </div>
-                    <div class="col-1-of-2">
+                    <div class="col-1-of-2 fourth">
                         <img src="img/pie.jpg" alt="Adam eating apple pie in Amsterdam" class="about-me__img">
                     </div>
-
-
                 </div>
+
             </section>
 
             <section class="section-projects u-center-text" id="projects">
@@ -229,7 +238,6 @@
                 </div>
 
                 <form action="https://formspree.io/adambrikman@gmail.com" method="POST" class="form">
-
                     <div class="form__group">
                         <input type="text" class="form__input form__text" placeholder="&nbsp;" id="name" name="name" required>
                         <label for="name" class="form__label">&nbsp;Name*</label>

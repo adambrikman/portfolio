@@ -1,10 +1,29 @@
 .about-me__img {
-    @include addShadow;
+  @include addShadow;
 
-    border-radius: 3px;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    width: 70%;
+  border-radius: 3px;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  width: 70%;
+}
 
+.grid {
+  display: grid;
+}
+
+.first {
+  order: 2 !important;
+}
+
+.second {
+  order: 1 !important;
+}
+
+.third {
+  order: 4;
+}
+
+.fourth {
+  order: 3;
 }

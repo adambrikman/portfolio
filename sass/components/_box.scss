@@ -8,29 +8,29 @@
   &__picture {
     background-size: cover;
     background-blend-mode: screen;
-    border-radius: 30px;
-    height: 22rem;
+    border-radius: 10px;
     padding-bottom: 20rem;
 
+    &--1,
+    &--2,
+    &--3 {
+      margin: 0 auto;
+      margin-top: 2rem;
+      width: 95%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
     &--1 {
-      // margin: 0 auto;
-      // padding-top: 2rem;
-      // width: 95%;
-      // background-image: url(../img/number1.jpg);
+      background-image: url(../../img/GIFs/url_shortener.gif);
     }
 
     &--2 {
-      // margin: 0 auto;
-      // padding-top: 2rem;
-      // width: 95%;
-      // background-image: url(../img/number2.jpg);
+      background-image: url(../../img/GIFs/book_tracker.gif);
     }
 
     &--3 {
-      // margin: 0 auto;
-      // padding-top: 2rem;
-      // width: 95%;
-      // background-image: url(../img/number3.jpg);
+      background-image: url(../../img/GIFs/choropleth_map.gif);
     }
   }
 
