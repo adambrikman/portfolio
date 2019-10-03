@@ -254,12 +254,12 @@ a {
         .box__picture--1, .box__picture--2, .box__picture--3 {
           height: 27rem; } }
     .box__picture--1 {
-      background-image: url(/img/GIFs/url_shortener.gif); }
+      background-image: url("/img/GIFs/url_shortener.gif"); }
     .box__picture--2 {
-      background-image: url(/img/GIFs/book_tracker.gif);
+      background-image: url("/img/GIFs/book_tracker.gif");
       background-repeat: no-repeat; }
     .box__picture--3 {
-      background-image: url(/img/GIFs/d3_map.gif); }
+      background-image: url("/img/GIFs/d3_map.gif"); }
   .box__heading {
     width: 98%;
     font-size: 2rem;
