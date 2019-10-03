@@ -236,23 +236,31 @@ a {
   background-color: #fff;
   height: 55rem;
   border: 1px solid #eee; }
+  @media (max-width: 56.25em) {
+    .box {
+      height: 60rem; } }
   .box__picture {
     background-size: cover;
     background-blend-mode: screen;
-    border-radius: 10px;
+    border-radius: 6px;
     padding-bottom: 20rem; }
     .box__picture--1, .box__picture--2, .box__picture--3 {
       margin: 0 auto;
       margin-top: 2rem;
       width: 95%;
       background-size: contain;
-      background-repeat: no-repeat; }
+      background-repeat: round; }
+      @media (max-width: 56.25em) {
+        .box__picture--1, .box__picture--2, .box__picture--3 {
+          height: 27rem;
+          background-repeat: no-repeat; } }
     .box__picture--1 {
-      background-image: url(../../img/GIFs/url_shortener.gif); }
+      background-image: url(./../../img/GIFs/url_shortener.gif); }
     .box__picture--2 {
-      background-image: url(../../img/GIFs/book_tracker.gif); }
+      background-image: url(./../../img/GIFs/book_tracker.gif);
+      background-repeat: no-repeat; }
     .box__picture--3 {
-      background-image: url(../../img/GIFs/choropleth_map.gif); }
+      background-image: url(./../../img/GIFs/d3_map.gif); }
   .box__heading {
     width: 98%;
     font-size: 2rem;

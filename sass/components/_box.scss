@@ -5,10 +5,14 @@
   height: 55rem;
   border: 1px solid $color-grey-light-2;
 
+  @include respond(tab-port) {
+    height: 60rem;
+  }
+
   &__picture {
     background-size: cover;
     background-blend-mode: screen;
-    border-radius: 10px;
+    border-radius: 6px;
     padding-bottom: 20rem;
 
     &--1,
@@ -18,19 +22,25 @@
       margin-top: 2rem;
       width: 95%;
       background-size: contain;
-      background-repeat: no-repeat;
+      background-repeat: round;
+
+      @include respond(tab-port) {
+        height: 27rem;
+        background-repeat: no-repeat;
+      }
     }
 
     &--1 {
-      background-image: url(../../img/GIFs/url_shortener.gif);
+      background-image: url(./../../img/GIFs/url_shortener.gif);
     }
 
     &--2 {
-      background-image: url(../../img/GIFs/book_tracker.gif);
+      background-image: url(./../../img/GIFs/book_tracker.gif);
+      background-repeat: no-repeat;
     }
 
     &--3 {
-      background-image: url(../../img/GIFs/choropleth_map.gif);
+      background-image: url(./../../img/GIFs/d3_map.gif);
     }
   }
 
