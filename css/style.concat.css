@@ -47,6 +47,39 @@
   100% {
     opacity: 1; } }
 
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
+
 /* Simple reset*/
 *,
 *::after,
@@ -439,6 +472,26 @@ a {
 
 .fourth {
   order: 3; }
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-image: linear-gradient(to right bottom, #b29600, #85714d);
+  color: #fff;
+  text-align: center;
+  border-radius: 10rem;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  font-size: 1.4rem;
+  bottom: 2rem; }
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s; }
 
 .row {
   max-width: 114rem;

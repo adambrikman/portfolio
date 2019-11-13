@@ -1,265 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85718065-2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-85718065-2"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-85718065-2');
+      gtag("config", "UA-85718065-2");
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"
+    ></script>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Adam Brikman | Portfolio</title>
-</head>
-    <body>
-        <header class="header">
+  </head>
+  <body>
+    <header class="header">
+      <figure class="header__shape">
+        <a href="https://www.linkedin.com/in/adambrikman/" target="_blank">
+          <img
+            src="img/pro_pic.jpg"
+            alt="Professional headshot of Adam Brikman"
+            class="header__img"
+          />
+          <figcaption class="header__caption">
+            <span class="header__caption-firstName">
+              Adam
+            </span>
+            Brikman
+          </figcaption>
+        </a>
+      </figure>
 
-            <figure class="header__shape">
+      <nav class="nav">
+        <label class="navBurger" for="toggle">&#9776;</label>
+        <span class="nav__list">
+          <ul class="menu">
+            <a href="#about" class="nav__list--item">About</a>
+            <a href="#projects" class="nav__list--item">Projects</a>
+            <a href="#contact" class="nav__list--item">Contact</a>
+          </ul>
+        </span>
+      </nav>
 
-                <a href="https://www.linkedin.com/in/adambrikman/" target="_blank">
-                    <img src="img/pro_pic.jpg" alt="Professional headshot of Adam Brikman" class="header__img">
-                    <figcaption class="header__caption">
-                        <span class="header__caption-firstName">
-                            Adam
-                        </span>
-                        Brikman
-                    </figcaption>                    
-                </a>
-            </figure>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span
+            class="heading-primary--intro u-margin-top-small"
+            style="text-align: left"
+            >Hey there!</span
+          >
+          <span class="heading-primary--main u-margin-top-huge">
+            <span class="heading-primary--main-1">
+              I'm
+            </span>
+            Adam
+          </span>
+          <span class="heading-primary--sub u-margin-bottom-medium"
+            >...and I love making cool things.</span
+          >
+        </h1>
+        <a href="#projects" class="btn btn--gold btn--animated"
+          >Check out my work</a
+        >
+      </div>
+    </header>
 
-            <nav class="nav">
-                <label class="navBurger" for="toggle">&#9776;</label>
-                <span class="nav__list">
-                    <ul class="menu">
-                        <a href="#about" class="nav__list--item">About</a>
-                        <a href="#projects" class="nav__list--item">Projects</a>
-                        <a href="#contact" class="nav__list--item">Contact</a>
-                    </ul>
-                </span>
-            </nav>
+    <main>
+      <section class="section-about" id="about">
+        <div class="u-center-text u-margin-top-huge">
+          <h2 class="heading-secondary u-margin-bottom-medium">
+            About Me
+          </h2>
+        </div>
 
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--intro u-margin-top-small" style="text-align: left">Hey there!</span>
-                    <span class="heading-primary--main u-margin-top-huge">
-                        <span class="heading-primary--main-1">
-                            I'm
-                        </span> 
-                        Adam
-                    </span>
-                    <span class="heading-primary--sub u-margin-bottom-medium">...and I love making cool things.</span>
-                </h1>
-                <a href="#projects" class="btn btn--gold btn--animated">Check out my work</a>
-                
+        <div class="row">
+          <div class="col-1-of-2 first">
+            <img
+              src="img/paris.jpg"
+              alt="Adam at Notre Dame Cathedral"
+              class="about-me__img"
+            />
+          </div>
+          <div class="col-1-of-2 second">
+            <h3 class="heading-tertiary u-center-text u-margin-bottom-small">
+              Hey! I'm Adam
+            </h3>
+
+            <p class="paragraph">
+              I was born and raised in Las Vegas, NV. I graduated in 2015 with a
+              Masters in Accounting. Shortly after graduating, I passed the CPA
+              exams and began working at a top public accounting firm.
+            </p>
+
+            <p class="paragraph">
+              While working at the firm, I stumbled across CS50, the free
+              introductory CS course provided by Harvard Extension school.
+            </p>
+
+            <p />
+
+            <p class="paragraph">
+              After completing (and struggling!) through the first assigment in
+              the C language I realized I just spent a week of my spare time on
+              'homework' for enjoyment.
+            </p>
+
+            <p />
+
+            <p class="paragraph">
+              It was then and there I decided I would complete course, no matter
+              what.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2 third">
+            <h3 class="heading-tertiary u-center-text u-margin-bottom-small">
+              Fast-forward to now
+            </h3>
+            <p class="paragraph">
+              CS50 changed my life because it changed the way I approached
+              problem solving. It was through the challenges in the course that
+              I fell in love with programming.
+            </p>
+
+            <p class="paragraph">
+              I couldn't believe there was a career where I could build things,
+              have critical thinking included in my work life and enjoy what I
+              was doing. I began looking up what it would take to become a
+              software engineer.
+            </p>
+
+            <p class="paragraph">
+              I've since expanded my skills to delve further into responsive web
+              design as well as both front-end and back-end development.
+            </p>
+
+            <p class="paragraph">
+              When I'm not programming, I'm traveling, exercising or eating.
+            </p>
+          </div>
+          <div class="col-1-of-2 fourth">
+            <img
+              src="img/pie.jpg"
+              alt="Adam eating apple pie in Amsterdam"
+              class="about-me__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-projects u-center-text" id="projects">
+        <div class="u-margin-top-huge">
+          <h2 class="heading-secondary u-margin-bottom-medium">
+            Featured Projects
+          </h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="box">
+              <div class="box__project">
+                <div class="box__picture box__picture--1">
+                  &nbsp;
+                </div>
+                <h4 class="box__heading">
+                  <span class="box__heading-span box__heading-span--1"
+                    >URL Shortener
+                  </span>
+                </h4>
+                <div class="box__details">
+                  <ul>
+                    <li>
+                      <i class="fab fa-2x fa-node-js"></i>
+                      <i class="fab fa-2x fa-js-square"></i>
+                      <i class="fab fa-2x fa-html5"></i>
+                      <i class="fab fa-2x fa-css3-alt"></i>
+                    </li>
+                  </ul>
+                  <a
+                    href="https://brev-i.herokuapp.com/"
+                    target="”_blank”"
+                    rel="noopener noreferrer"
+                    class="btn btn--gold u-margin-bottom-small"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/adambrikman/url-shortener"
+                    target="”_blank”"
+                    rel="noopener noreferrer"
+                    class="btn btn--gold"
+                    >View code</a
+                  >
+                </div>
+              </div>
             </div>
+          </div>
 
-        </header>
-        
-        <main>
-            <section class="section-about" id="about">
-                <div class="u-center-text u-margin-top-huge">
-                    <h2 class="heading-secondary u-margin-bottom-medium">
-                        About Me
-                    </h2>            
+          <div class="col-1-of-3">
+            <div class="box">
+              <div class="box__project">
+                <div class="box__picture box__picture--2">
+                  &nbsp;
                 </div>
-                
-                <div class="row">
-                    <div class="col-1-of-2 first">
-                        <img src="img/paris.jpg" alt="Adam at Notre Dame Cathedral" class="about-me__img">
-                    </div>
-                    <div class="col-1-of-2 second">
-                        <h3 class="heading-tertiary u-center-text u-margin-bottom-small">Hey! I'm Adam</h3>
-
-                        <p class="paragraph">I was born and raised in Las Vegas, NV. I graduated in 2015 with a Masters in Accounting. Shortly after graduating, I passed the CPA exams and began working at a top public accounting firm.
-                        </p>
-
-                        <p class="paragraph">
-                        While working at the firm, I stumbled across CS50, the free introductory CS course provided by Harvard Extension school.
-                        <p/>
-
-                        <p class="paragraph">
-                        After completing (and struggling!) through the first assigment in the C language I realized I just spent a week of my spare time on 'homework' for enjoyment. 
-                        <p/>
-
-                        <p class="paragraph">
-                        It was then and there I decided I would complete course, no matter what.
-                        </p>
-                    </div>
+                <h4 class="box__heading">
+                  <span class="box__heading-span box__heading-span--1"
+                    >Book Tracker
+                  </span>
+                </h4>
+                <div class="box__details">
+                  <ul>
+                    <li>
+                      <i class="fas fa-2x fa-leaf"></i>
+                      <i class="fab fa-2x fa-node-js"></i>
+                      <i class="fab fa-2x fa-react"></i>
+                      <i class="fab fa-2x fa-css3-alt"></i>
+                    </li>
+                  </ul>
+                  <a
+                    href="https://books-to-read-app.herokuapp.com"
+                    target="”_blank”"
+                    rel="noopener noreferrer"
+                    class="btn btn--gold u-margin-bottom-small"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/adambrikman/books-to-read"
+                    target="”_blank”"
+                    rel="noopener noreferrer"
+                    class="btn btn--gold"
+                    >View code</a
+                  >
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="row">
-                    <div class="col-1-of-2 third">
-                        <h3 class="heading-tertiary u-center-text u-margin-bottom-small">Fast-forward to now</h3>
-                        <p class="paragraph">CS50 changed my life because it changed the way I approached problem solving. It was through the challenges in the course that I fell in love with programming.
-                        </p>
-
-                        <p class="paragraph">
-                        I couldn't believe there was a career where I could build things, have critical thinking included in my work life and enjoy what I was doing. I began looking up what it would take to become a software engineer.
-                        </p>
-
-                        <p class="paragraph">
-                        I've since expanded my skills to delve further into responsive web design as well as both front-end and back-end development.
-                        </p>
-
-                        <p class="paragraph">
-                        When I'm not programming, I'm traveling, exercising or eating.
-                        </p>
-                    </div>
-                    <div class="col-1-of-2 fourth">
-                        <img src="img/pie.jpg" alt="Adam eating apple pie in Amsterdam" class="about-me__img">
-                    </div>
+          <div class="col-1-of-3">
+            <div class="box">
+              <div class="box__project">
+                <div class="box__picture box__picture--3">
+                  &nbsp;
                 </div>
-
-            </section>
-
-            <section class="section-projects u-center-text" id="projects">
-
-                <div class="u-margin-top-huge">
-                    <h2 class="heading-secondary u-margin-bottom-medium">
-                        Featured Projects
-                    </h2>
+                <h4 class="box__heading">
+                  <span class="box__heading-span box__heading-span--1"
+                    >D3 Choropleth Map
+                  </span>
+                </h4>
+                <div class="box__details">
+                  <ul>
+                    <li>
+                      <i class="fab fa-2x fa-js-square"></i>
+                      <i class="fab fa-2x fa-html5"></i>
+                      <i class="fab fa-2x fa-css3-alt"></i>
+                    </li>
+                  </ul>
+                  <a
+                    href="https://codepen.io/adambrikman/full/oNvqxGd"
+                    target="”_blank”"
+                    rel="noopener noreferrer"
+                    class="btn btn--gold u-margin-bottom-small"
+                    >Demo</a
+                  >
+                  <a
+                    href="https://github.com/adambrikman/d3-choropleth-map"
+                    target="”_blank”"
+                    rel="noopener noreferrer"
+                    class="btn btn--gold"
+                    >View code</a
+                  >
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                <div class="row">
-                    <div class="col-1-of-3">
-                        <div class="box">
-                            <div class="box__project">
-                                <div class="box__picture box__picture--1">
-                                    &nbsp;
-                                </div>
-                                <h4 class="box__heading">
-                                    <span class="box__heading-span box__heading-span--1">URL Shortener
-                                    </span>
-                                </h4>
-                                <div class="box__details">
-                                    <ul>
-                                        <li>
-                                            <i class="fab fa-2x fa-node-js"></i>
-                                            <i class="fab fa-2x fa-js-square"></i>
-                                            <i class="fab fa-2x fa-html5"></i>
-                                            <i class="fab fa-2x fa-css3-alt"></i>
-                                        </li>
-                                    </ul>
-                                    <a href="https://brev-i.herokuapp.com/" target=”_blank” rel="noopener noreferrer" class="btn btn--gold u-margin-bottom-small">Demo</a>
-                                    <a href="https://github.com/adambrikman/url-shortener" target=”_blank” rel="noopener noreferrer" class="btn btn--gold">View code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+          <div class="blurb u-margin-bottom-medium">
+            Feel free to check out my other work:
+          </div>
+          <a
+            href="https://github.com/adambrikman"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-4x fa-github u-left-right-margins-medium"></i>
+          </a>
+          <a
+            href="https://codepen.io/adambrikman/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-4x fa-codepen u-left-right-margins-medium"></i>
+          </a>
+        </div>
+      </section>
 
-                    <div class="col-1-of-3">
-                        <div class="box">
-                            <div class="box__project">
-                                <div class="box__picture box__picture--2">
-                                    &nbsp;
-                                </div>
-                                <h4 class="box__heading">
-                                    <span class="box__heading-span box__heading-span--1">Book Tracker
-                                    </span>
-                                </h4>
-                                <div class="box__details">
-                                    <ul>
-                                        <li>
-                                            <i class="fas fa-2x fa-leaf"></i>
-                                            <i class="fab fa-2x fa-node-js"></i>
-                                            <i class="fab fa-2x fa-react"></i>
-                                            <i class="fab fa-2x fa-css3-alt"></i>
-                                        </li>
-                                    </ul>
-                                    <a href="https://books-to-read-app.herokuapp.com" target=”_blank” rel="noopener noreferrer" class="btn btn--gold u-margin-bottom-small">Demo</a>
-                                    <a href="https://github.com/adambrikman/books-to-read" target=”_blank” rel="noopener noreferrer" class="btn btn--gold">View code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <section class="section-contact u-center-text" id="contact">
+        <div class="contact__form">
+          <div class="u-margin-top-huge u-margin-bottom-small">
+            <h2 class="heading-secondary">
+              Contact Me
+            </h2>
+          </div>
+          <p class="contact__form--text blurb u-center-text">
+            I am currently seeking out a software developer position. Feel free
+            to contact me via
+            <a
+              href="https://www.linkedin.com/in/adambrikman/"
+              target="_blank"
+              class="outbound-link"
+              >LinkedIn</a
+            >
+            or send me an e-mail below:
+          </p>
+        </div>
 
-                    <div class="col-1-of-3">
-                        <div class="box">
-                            <div class="box__project">
-                                <div class="box__picture box__picture--3">
-                                    &nbsp;
-                                </div>
-                                <h4 class="box__heading">
-                                    <span class="box__heading-span box__heading-span--1">D3 Choropleth Map
-                                    </span>
-                                </h4>
-                                <div class="box__details">
-                                    <ul>
-                                        <li>
-                                            <i class="fab fa-2x fa-js-square"></i>
-                                            <i class="fab fa-2x fa-html5"></i>
-                                            <i class="fab fa-2x fa-css3-alt"></i>
-                                        </li>
-                                    </ul>
-                                    <a href="https://codepen.io/adambrikman/full/oNvqxGd" target=”_blank” rel="noopener noreferrer" class="btn btn--gold u-margin-bottom-small">Demo</a>
-                                    <a href="https://github.com/adambrikman/d3-choropleth-map" target=”_blank” rel="noopener noreferrer" class="btn btn--gold">View code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <form
+          action="https://getform.io/f/63974a73-8303-4bc8-aa6e-e3b03bf24a65"
+          method="POST"
+          class="form"
+        >
+          <div class="form__group">
+            <input
+              type="text"
+              class="form__input form__text"
+              placeholder="&nbsp;"
+              id="name"
+              name="name"
+              required
+            />
+            <label for="name" class="form__label">&nbsp;Name*</label>
+          </div>
 
-                <div class="row">
-                    <div class="blurb u-margin-bottom-medium">Feel free to check out my other work:</div>
-                    <a href="https://github.com/adambrikman" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-4x fa-github u-left-right-margins-medium"></i>
-                    </a>
-                    <a href="https://codepen.io/adambrikman/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-4x fa-codepen u-left-right-margins-medium"></i>
-                    </a>
-                </div>
+          <div class="form__group">
+            <input
+              type="email"
+              class="form__input form__text"
+              placeholder="&nbsp;"
+              id="email"
+              name="email"
+              required
+            />
+            <label for="email" class="form__label">E-mail address*</label>
+          </div>
 
-            </section>
+          <div class="form__group">
+            <textarea
+              rows="4"
+              cols="30"
+              class="form__message form__text"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+            <label for="message" class="form__label--message">Message*</label>
+          </div>
 
-            <section class="section-contact u-center-text" id="contact">
+          <button id="send-btn" class="form__submit btn btn--gold btn--email">
+            Send e-mail
+            <i class="far fa-paper-plane"></i>
+          </button>
+        </form>
+      </section>
 
-                <div class="contact__form">
-                    <div class="u-margin-top-huge u-margin-bottom-small">
-                            <h2 class="heading-secondary">
-                                Contact Me
-                            </h2>
-                    </div>
-                    <p class="contact__form--text blurb u-center-text">I am currently seeking out a software developer position. Feel free to contact me via <a href="https://www.linkedin.com/in/adambrikman/" target="_blank" class="outbound-link">LinkedIn</a> or send me an e-mail below:</p>
-                </div>
+      <div id="snackbar">E-mail Sent!</div>
+    </main>
+  </body>
 
-                <form action="https://formspree.io/adambrikman@gmail.com" method="POST" class="form">
-                    <div class="form__group">
-                        <input type="text" class="form__input form__text" placeholder="&nbsp;" id="name" name="name" required>
-                        <label for="name" class="form__label">&nbsp;Name*</label>
-                    </div>
-
-                    <div class="form__group">
-                        <input type="email" class="form__input form__text" placeholder="&nbsp;" id="email" name="name" required>
-                        <label for="email" class="form__label">E-mail address*</label>
-                    </div>
-
-                    <div class="form__group">
-                        <textarea rows="4" cols="30" class="form__message form__text" id="message" name="name" required></textarea>
-                        <label for="message" class="form__label--message">Message*</label>
-                    </div>
-                    
-                    <button class="form__submit btn btn--gold btn--email"> Send e-mail 
-                        <i class="far fa-paper-plane"></i>
-                    </button>
-                </form>
-            </section>
-
-        </main>
-
-    </body>
-
-    
-    <script type="text/javascript" src="js/scripts.js"></script>
-
+  <script type="text/javascript" src="js/scripts.js"></script>
 </html>

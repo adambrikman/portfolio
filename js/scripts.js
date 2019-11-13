@@ -34,3 +34,31 @@ window.addEventListener("resize", () => {
     para.parentNode.insertBefore(pic, para);
   }
 });
+
+// Handle e-mail submissions
+const formElement = document.querySelector(".form");
+
+formElement.addEventListener("submit", event => {
+  event.preventDefault();
+  const data = new URLSearchParams(new FormData(formElement));
+  fetch("https://getform.io/f/63974a73-8303-4bc8-aa6e-e3b03bf24a65", {
+    method: "post",
+    body: data
+  });
+
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("message").value = "";
+  emailSentSnackbar();
+});
+
+// Snackbar notification for e-mail sent
+function emailSentSnackbar() {
+  var snackbar = document.getElementById("snackbar");
+
+  snackbar.className = "show";
+
+  setTimeout(function() {
+    snackbar.className = snackbar.className.replace("show", "");
+  }, 3000);
+}
