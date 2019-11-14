@@ -1,21 +1,21 @@
 #snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
   background-image: linear-gradient(
     to right bottom,
     rgba(#b29600, 1),
     rgba(#85714d, 1)
   );
-  color: $color-white;
-  text-align: center;
   border-radius: 10rem;
+  bottom: 2rem;
+  color: $color-white;
+  font-size: $medium-font-size;
+  left: 50%;
+  margin-left: -125px;
+  min-width: 250px;
   padding: 16px;
   position: fixed;
+  text-align: center;
+  visibility: hidden;
   z-index: 1;
-  left: 50%;
-  font-size: $medium-font-size;
-  bottom: 2rem;
 }
 
 #snackbar.show {

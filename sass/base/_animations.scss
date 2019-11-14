@@ -65,7 +65,7 @@
     opacity: 0;
   }
   to {
-    bottom: 30px;
+    bottom: 2rem;
     opacity: 1;
   }
 }
@@ -76,14 +76,14 @@
     opacity: 0;
   }
   to {
-    bottom: 30px;
+    bottom: 2rem;
     opacity: 1;
   }
 }
 
 @-webkit-keyframes fadeout {
   from {
-    bottom: 30px;
+    bottom: 2rem;
     opacity: 1;
   }
   to {
@@ -94,7 +94,7 @@
 
 @keyframes fadeout {
   from {
-    bottom: 30px;
+    bottom: 2rem;
     opacity: 1;
   }
   to {

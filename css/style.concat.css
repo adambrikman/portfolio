@@ -53,7 +53,7 @@
     bottom: 0;
     opacity: 0; }
   to {
-    bottom: 30px;
+    bottom: 2rem;
     opacity: 1; } }
 
 @keyframes fadein {
@@ -61,12 +61,12 @@
     bottom: 0;
     opacity: 0; }
   to {
-    bottom: 30px;
+    bottom: 2rem;
     opacity: 1; } }
 
 @-webkit-keyframes fadeout {
   from {
-    bottom: 30px;
+    bottom: 2rem;
     opacity: 1; }
   to {
     bottom: 0;
@@ -74,7 +74,7 @@
 
 @keyframes fadeout {
   from {
-    bottom: 30px;
+    bottom: 2rem;
     opacity: 1; }
   to {
     bottom: 0;
@@ -450,6 +450,10 @@ a {
     margin: 0;
     padding-top: 1rem; } }
 
+@media (max-width: 56.25em) {
+  .nav {
+    margin-right: 3rem; } }
+
 .about-me__img {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
@@ -474,19 +478,19 @@ a {
   order: 3; }
 
 #snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
   background-image: linear-gradient(to right bottom, #b29600, #85714d);
-  color: #fff;
-  text-align: center;
   border-radius: 10rem;
+  bottom: 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  left: 50%;
+  margin-left: -125px;
+  min-width: 250px;
   padding: 16px;
   position: fixed;
-  z-index: 1;
-  left: 50%;
-  font-size: 1.4rem;
-  bottom: 2rem; }
+  text-align: center;
+  visibility: hidden;
+  z-index: 1; }
 
 #snackbar.show {
   visibility: visible;
