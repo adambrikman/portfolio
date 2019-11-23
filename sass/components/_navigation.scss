@@ -44,14 +44,19 @@
 
   .menu {
     height: 0;
+    transition: all 0.1s ease-out;
     text-align: center;
     overflow: hidden;
     width: 100%;
+    position: absolute;
   }
 
   .open {
-    height: auto;
-    transition: all 3s ease-out;
+    height: 20rem;
+    transition: all 0.3s ease-in;
+    margin-top: 5rem;
+    position: absolute;
+    z-index: 100;
   }
 
   .menu a {
