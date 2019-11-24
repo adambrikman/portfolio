@@ -23,7 +23,7 @@
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(10rem); }
+    transform: translateX(20rem); }
   80% {
     transform: translateX(-1rem); }
   100% {
@@ -196,7 +196,11 @@ body {
     color: #b29600; }
   @media (max-width: 56.25em) {
     .fa-4x {
-      font-size: 6rem; } }
+      font-size: 5.5rem; } }
+
+@media (max-width: 75.5em) {
+  .svg-inline--fa.fa-w-16 {
+    width: 0.9em; } }
 
 @media (max-width: 56.25em) {
   .box__heading {
@@ -229,6 +233,13 @@ a {
   color: #a1a8ab;
   transition: all 0.3s ease-out; }
   .outbound-link:hover {
+    color: #b29600;
+    transition: all 0.3s ease-out; }
+
+.project-link {
+  color: #3d4c53;
+  transition: all 0.3s ease-out; }
+  .project-link:hover {
     color: #b29600;
     transition: all 0.3s ease-out; }
 
@@ -438,7 +449,7 @@ a {
     display: block;
     float: right;
     font-size: 26px;
-    margin: -6px 40px 0 0;
+    margin: -6px 0 0 0;
     width: 26px; }
   .menu {
     height: 0;
