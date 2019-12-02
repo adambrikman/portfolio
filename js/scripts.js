@@ -20,14 +20,20 @@ menu.addEventListener("click", () => {
 let pic = document.querySelector(".first");
 let para = document.querySelector(".second");
 
-window.addEventListener("resize", () => {
+var reorderParagraphs = function() {
   if (document.documentElement.clientWidth <= 900) {
     para.parentNode.removeChild(para);
     pic.parentNode.insertBefore(para, pic);
   }
-});
+};
 
-// When screen is larger than 900px, reset order back to normal
+// Upon load, swap order of first picture & first paragraph
+document.addEventListener("DOMContentLoaded", reorderParagraphs, false);
+
+// When screen is less than or equal to 900px, swap order of first picture & first paragraph
+window.addEventListener("resize", reorderParagraphs, false);
+
+// When screen is larger than 900px, change order back to normal
 window.addEventListener("resize", () => {
   if (document.documentElement.clientWidth > 900) {
     pic.parentNode.removeChild(pic);
