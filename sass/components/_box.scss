@@ -50,6 +50,11 @@
     padding-top: 4rem;
     text-transform: uppercase;
     width: 98%;
+
+    @include respond(tab-port) {
+      padding: 0;
+      padding-bottom: 3rem;
+    }
   }
 
   &__details {
