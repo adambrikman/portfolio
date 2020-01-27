@@ -307,7 +307,7 @@ a {
       background-image: url(https://github.com/adambrikman/portfolio/blob/master/img/GIFs/book_tracker.gif?raw=true);
       background-repeat: no-repeat; }
     .box__picture--3 {
-      background-image: url("../../img/GIFs/LightsOut.gif"); }
+      background-image: url(https://github.com/adambrikman/portfolio/blob/master/img/GIFs/LightsOut.gif?raw=true); }
   .box__heading {
     width: 98%;
     font-size: 2rem;
@@ -315,6 +315,10 @@ a {
     padding-top: 4rem;
     text-transform: uppercase;
     width: 98%; }
+    @media (max-width: 56.25em) {
+      .box__heading {
+        padding: 0;
+        padding-bottom: 3rem; } }
   .box__details {
     padding: 3rem; }
     .box__details ul {
@@ -532,6 +536,14 @@ a {
   pointer-events: none;
   transition: 0.2s;
   will-change: transform; }
+  @media (max-width: 56.25em) {
+    [data-tooltip]:before,
+    [data-tooltip]:after {
+      bottom: calc(100% + 20px); } }
+  @media (max-width: 24em) {
+    [data-tooltip]:before,
+    [data-tooltip]:after {
+      bottom: calc(100% + 15px); } }
 
 /* The actual tooltip with a dynamic width */
 [data-tooltip]:before {
@@ -550,6 +562,9 @@ a {
   text-align: center;
   white-space: pre-wrap;
   transform: translate(-50%, -5px) scale(0.5); }
+  @media (max-width: 24em) {
+    [data-tooltip]:before {
+      padding: 0; } }
 
 /* Tooltip arrow */
 [data-tooltip]:after {
