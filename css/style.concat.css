@@ -80,6 +80,24 @@
     bottom: 0;
     opacity: 0; } }
 
+@keyframes move {
+  30%,
+  36% {
+    transform: translateY(calc(-6px * var(--move))) translateZ(0) rotate(calc(-13deg * var(--rotate) * var(--part))); }
+  50% {
+    transform: translateY(calc(3px * var(--move))) translateZ(0) rotate(calc(6deg * var(--rotate) * var(--part))); }
+  70% {
+    transform: translateY(calc(-2px * var(--move))) translateZ(0) rotate(calc(-3deg * var(--rotate) * var(--part))); } }
+
+@keyframes move-out {
+  30%,
+  36% {
+    transform: translateY(calc(6px * var(--move))) translateZ(0) rotate(calc(13deg * var(--rotate) * var(--part))); }
+  50% {
+    transform: translateY(calc(-3px * var(--move))) translateZ(0) rotate(calc(-6deg * var(--rotate) * var(--part))); }
+  70% {
+    transform: translateY(calc(2px * var(--move))) translateZ(0) rotate(calc(3deg * var(--rotate) * var(--part))); } }
+
 /* Simple reset*/
 *,
 *::after,
@@ -340,14 +358,75 @@ a {
   letter-spacing: 0.3rem;
   padding: 1rem 3rem;
   text-decoration: none;
-  transition: all 0.3s;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 0 !important; }
 
-.btn:hover {
-  background-image: linear-gradient(to right bottom, rgba(178, 150, 0, 0.8), rgba(133, 113, 77, 0.8));
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  color: #fff;
-  transform: translateY(-3px); }
+.btn--cta {
+  transition: all .3s ease-in-out; }
+  .btn--cta:hover {
+    background-image: linear-gradient(to right bottom, rgba(178, 150, 0, 0.8), rgba(133, 113, 77, 0.8));
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transform: translateY(-3px); }
+
+.btn--project {
+  --color: $color-grey-dark-3;
+  --background: #3d4c53;
+  --background-hover: var(--background);
+  --hover-back: #85714d;
+  --hover-front: #b29600;
+  position: relative;
+  overflow: hidden;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: -webkit-radial-gradient(white, black);
+  color: var(--c, var(--color));
+  background: var(--b, var(--background));
+  transition: color 0.2s linear var(--c-d, 0.2s), background 0.3s linear var(--b-d, 0.2s); }
+  .btn--project.alternative {
+    --color-hover: $color-white !important;
+    --background: $color-white;
+    --hover-back: #85714d;
+    --hover-front: #b29600; }
+  .btn--project:not(.simple):before, .btn--project:not(.simple):after {
+    content: '';
+    position: absolute;
+    background: var(--pb, var(--hover-back));
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200%;
+    border-radius: var(--br, 40%);
+    transform: translateY(var(--y, 50%));
+    transition: transform var(--d, 0.4s) ease-in var(--d-d, 0s), border-radius 0.5s ease var(--br-d, 0.08s); }
+  .btn--project:not(.simple):after {
+    --pb: var(--hover-front);
+    --d: .44s; }
+  .btn--project div {
+    z-index: 1;
+    position: relative;
+    display: flex; }
+    .btn--project div span {
+      display: block;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      animation: var(--name, none) 0.7s linear forwards 0.18s; }
+  .btn--project.in {
+    --name: move; }
+    .btn--project.in:not(.out) {
+      --c: #fff;
+      --b: var(--background-hover); }
+      .btn--project.in:not(.out):before, .btn--project.in:not(.out):after {
+        --y: 0;
+        --br: 5%; }
+      .btn--project.in:not(.out):after {
+        --br: 10%;
+        --d-d: .02s; }
+    .btn--project.in.out {
+      --name: move-out; }
+      .btn--project.in.out:before {
+        --d-d: .06s; }
 
 .btn:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -360,7 +439,8 @@ a {
 
 .btn--email {
   font-size: 1.4rem;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-bottom: 1rem; }
 
 .btn--animated {
   animation: appear 0.9s ease-out 3.3s backwards; }
@@ -374,6 +454,7 @@ a {
   display: block;
   font-family: inherit;
   margin: 0.6rem auto;
+  margin-top: 2rem;
   width: 100%; }
 
 .form__input {
@@ -381,7 +462,8 @@ a {
   border-bottom: 0.5px solid #a1a8ab;
   color: inherit;
   padding: 0.5rem 0.5rem;
-  transform: translateY(0.5rem); }
+  transform: translateY(0.5rem);
+  margin-bottom: -2px; }
   .form__input:empty:placeholder-shown ~ .form__label {
     color: #a1a8ab;
     transform: translateY(-2rem); }
@@ -404,6 +486,7 @@ a {
     transition: all 0.3s ease-out; }
 
 .form__message {
+  border: 0.5px solid #a1a8ab;
   border-radius: 3px;
   margin-top: 2.5rem;
   max-width: 100%;
@@ -589,14 +672,14 @@ a {
 
 /* Scales from 0.5 to 1 -> grow effect */
 [data-tooltip]:hover:before {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
   transform: translate(-50%, -5px) scale(1); }
 
 /* Slide down effect only on mouseenter (NOT on mouseleave) */
 [data-tooltip]:hover:after {
-  transition-delay: 0.5s;
+  transition-delay: 0.3s;
   /* Starting after the grow effect */
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transform: translateX(-50%) scaleY(1); }
 
 /*

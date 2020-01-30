@@ -10,24 +10,104 @@
     letter-spacing: 0.3rem;
     padding: 1rem 3rem;
     text-decoration: none;
-    transition: all 0.3s;
-
-    // Change for the <button> element
     cursor: pointer;
+    margin-bottom: 0 !important;
+
+
   }
 
-  &:hover {
-    // background-color: $color-primary;
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(#b29600, 0.8),
-      rgba(#85714d, 0.8)
-    );
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-    color: $color-white;
-    transform: translateY(-3px);
-  }
+  &--cta {
+    transition: all .3s ease-in-out;
 
+    &:hover {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.8),
+        rgba($color-primary-dark, 0.8)
+      );
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      color: $color-white;
+      transform: translateY(-3px);
+    }
+  }
+    
+  &--project {
+    &.alternative {
+      --color-hover: $color-white !important;
+      --background: $color-white;
+      --hover-back: #85714d;
+      --hover-front: #b29600;
+    }
+
+    --color: $color-grey-dark-3;
+    
+    --background: #3d4c53;
+    --background-hover: var(--background);
+    --hover-back: #85714d;
+    --hover-front: #b29600;
+    position: relative;
+    overflow: hidden;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: -webkit-radial-gradient(white, black);
+    color: var(--c, var(--color));
+    background: var(--b, var(--background));
+    transition: color .2s linear var(--c-d, .2s), background .3s linear var(--b-d, .2s);
+    &:not(.simple) {
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            background: var(--pb, var(--hover-back));
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 200%;
+            border-radius: var(--br, 40%);
+            transform: translateY(var(--y, 50%));
+            transition: transform var(--d, .4s) ease-in var(--d-d, 0s), border-radius .5s ease var(--br-d, .08s);
+        }
+        &:after {
+            --pb: var(--hover-front);
+            --d: .44s;
+        }
+    }
+    div {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        span {
+            display: block;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+            animation: var(--name, none) .7s linear forwards .18s;
+        }
+    }
+    &.in {
+        --name: move;
+        &:not(.out) {
+            --c: #fff;
+            --b: var(--background-hover);
+            &:before,
+            &:after {
+                --y: 0;
+                --br: 5%;
+            }
+            &:after {
+                --br: 10%;
+                --d-d: .02s;
+            }
+        }
+        &.out {
+            --name: move-out;
+            &:before {
+                --d-d: .06s;
+            }
+        }
+    }
+  }
+  
   &:active {
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
     transform: translateY(-1px);
@@ -45,6 +125,7 @@
   &--email {
     font-size: $medium-font-size;
     vertical-align: middle;
+    margin-bottom: 1rem;
   }
 
   &--animated {

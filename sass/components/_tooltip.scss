@@ -34,7 +34,7 @@
     width: -moz-max-content;
     border-radius: 6px;
     font-size: 14px;
-    background-color: rgba(61, 76, 83, 0.9);
+    background-color: rgba($color-grey-dark-3, 0.9);
     background-image: linear-gradient(30deg,
       rgba(59, 72, 80, 0.44),
       rgba(59, 68, 75, 0.44),
@@ -72,13 +72,13 @@
   }
   /* Scales from 0.5 to 1 -> grow effect */
   [data-tooltip]:hover:before {
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
     transform: translate(-50%, -5px) scale(1);
   }
   /* Slide down effect only on mouseenter (NOT on mouseleave) */
   [data-tooltip]:hover:after {
-    transition-delay: 0.5s; /* Starting after the grow effect */
-    transition-duration: 0.2s;
+    transition-delay: 0.3s; /* Starting after the grow effect */
+    transition-duration: 0.1s;
     transform: translateX(-50%) scaleY(1);
   }
   

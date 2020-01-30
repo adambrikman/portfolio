@@ -1,429 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-85718065-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "UA-85718065-2");
-    </script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85718065-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    gtag("config", "UA-85718065-2");
+  </script>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900&display=swap"
-      rel="stylesheet"
-    />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"
-    ></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/style.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
 
-    <title>Adam Brikman | Portfolio</title>
-  </head>
-  <body>
-    <header class="header">
-      <figure class="header__shape">
-        <a href="https://www.linkedin.com/in/adambrikman/" target="_blank">
-          <img
-            src="img/pro_pic.jpg"
-            alt="Picture of Adam Brikman"
-            class="header__img"
-          />
-          <figcaption class="header__caption">
-            <span class="header__caption-firstName">
-              Adam
-            </span>
-            Brikman
-          </figcaption>
-        </a>
-      </figure>
+  <link rel="stylesheet" href="css/style.css" />
 
-      <nav class="nav">
-        <label class="navBurger" for="toggle">&#9776;</label>
-        <span class="nav__list">
-          <ul class="menu">
-            <a
-              href="https://drive.google.com/open?id=10R4toKvEU907UJX7ysFWgXEgVRz4gGqk"
-              target="”_blank”"
-              rel="noopener noreferrer"
-              class="nav__list--item"
-              >Résumé</a
-            >
-            <a href="#about" class="nav__list--item">About</a>
-            <a href="#projects" class="nav__list--item">Projects</a>
-            <a href="#contact" class="nav__list--item">Contact</a>
-          </ul>
-        </span>
-      </nav>
+  <title>Adam Brikman | Portfolio</title>
+</head>
 
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--intro u-margin-top-small"
-            >Hey there!</span
-          >
-          <span class="heading-primary--main u-margin-top-huge">
-            <span class="heading-primary--main-1">
-              I'm
-            </span>
+<body>
+  <header class="header">
+    <figure class="header__shape">
+      <a href="https://www.linkedin.com/in/adambrikman/" target="_blank">
+        <img src="img/pro_pic.jpg" alt="Picture of Adam Brikman" class="header__img" />
+        <figcaption class="header__caption">
+          <span class="header__caption-firstName">
             Adam
           </span>
-          <span class="heading-primary--sub u-margin-bottom-medium"
-            >...and I love making cool things.</span
-          >
-        </h1>
-        <a href="#projects" class="btn btn--gold btn--animated"
-          >Check out my work</a
-        >
+          Brikman
+        </figcaption>
+      </a>
+    </figure>
+
+    <nav class="nav">
+      <label class="navBurger" for="toggle">&#9776;</label>
+      <span class="nav__list">
+        <ul class="menu">
+          <a href="https://drive.google.com/open?id=10R4toKvEU907UJX7ysFWgXEgVRz4gGqk" target="”_blank”"
+            rel="noopener noreferrer" class="nav__list--item">Résumé</a>
+          <a href="#about" class="nav__list--item">About</a>
+          <a href="#projects" class="nav__list--item">Projects</a>
+          <a href="#contact" class="nav__list--item">Contact</a>
+        </ul>
+      </span>
+    </nav>
+
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary--intro u-margin-top-small">Hey there!</span>
+        <span class="heading-primary--main u-margin-top-huge">
+          <span class="heading-primary--main-1">
+            I'm
+          </span>
+          Adam
+        </span>
+        <span class="heading-primary--sub u-margin-bottom-medium">...and I love making cool things.</span>
+      </h1>
+      <a href="#projects" class="btn btn--gold btn--cta btn--animated">Check out my work</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-about" id="about">
+      <div class="u-center-text u-margin-top-huge">
+        <h2 class="heading-secondary u-margin-bottom-medium">
+          About Me
+        </h2>
       </div>
-    </header>
 
-    <main>
-      <section class="section-about" id="about">
-        <div class="u-center-text u-margin-top-huge">
-          <h2 class="heading-secondary u-margin-bottom-medium">
-            About Me
-          </h2>
+      <div class="row">
+        <div class="col-1-of-2 first">
+          <img srcset="img/paris-small.jpg 300w, img/paris.jpg 3024w"
+            sizes="(max-width: 900px) 50vw, (max-width: 600px) 75vw, 3000px" alt="Adam at Notre Dame Cathedral"
+            class="about-me__img" src="img/paris.jpg" />
         </div>
+        <div class="col-1-of-2 second">
+          <h3 class="heading-tertiary u-center-text u-margin-bottom-small">
+            Hey! I'm Adam
+          </h3>
 
-        <div class="row">
-          <div class="col-1-of-2 first">
-            <img
-              srcset="img/paris-small.jpg 300w, img/paris.jpg 3024w"
-              sizes="(max-width: 900px) 50vw, (max-width: 600px) 75vw, 3000px"
-              alt="Adam at Notre Dame Cathedral"
-              class="about-me__img"
-              src="img/paris.jpg"
-            />
-          </div>
-          <div class="col-1-of-2 second">
-            <h3 class="heading-tertiary u-center-text u-margin-bottom-small">
-              Hey! I'm Adam
-            </h3>
+          <p class="paragraph">
+            I’m a full-stack developer based out of Las Vegas, NV. I enjoy
+            building modern, responsive web applications that either provide
+            utility or are fun and enjoyable for the end-user.
+          </p>
 
-            <p class="paragraph">
-              I’m a full-stack developer based out of Las Vegas, NV. I enjoy
-              building modern, responsive web applications that either provide
-              utility or are fun and enjoyable for the end-user.
-            </p>
+          <p class="paragraph">
+            Although I’ve written programs in C and Python, the majority of my
+            projects have been written in either vanilla JavaScript, Node or
+            React.
+          </p>
 
-            <p class="paragraph">
-              Although I’ve written programs in C and Python, the majority of my
-              projects have been written in either vanilla JavaScript, Node or
-              React.
-            </p>
+          <p />
 
-            <p />
+          <p class="paragraph">
+            Other technologies I’ve used in past projects include databases
+            such as SQL and MongoDB as well as front-end development tools
+            including Babel, SASS, Parcel and NPM.
+          </p>
 
-            <p class="paragraph">
-              Other technologies I’ve used in past projects include databases
-              such as SQL and MongoDB as well as front-end development tools
-              including Babel, SASS, Parcel and NPM.
-            </p>
-
-            <p />
-          </div>
+          <p />
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col-1-of-2 third">
-            <h3 class="heading-tertiary u-center-text u-margin-bottom-small">
-              Past & Present
-            </h3>
-            <p class="paragraph">
-              Prior to entering software development, I was a CPA performing
-              audits at companies ranging from casinos to non-profits.
-            </p>
+      <div class="row">
+        <div class="col-1-of-2 third">
+          <h3 class="heading-tertiary u-center-text u-margin-bottom-small">
+            Past & Present
+          </h3>
+          <p class="paragraph">
+            Prior to entering software development, I was a CPA performing
+            audits at companies ranging from casinos to non-profits.
+          </p>
 
-            <p class="paragraph">
-              With my domain experience in accounting and software development,
-              I bring the ability to understand business requirements and
-              translate them into technical requirements.
-            </p>
+          <p class="paragraph">
+            With my domain experience in accounting and software development,
+            I bring the ability to understand business requirements and
+            translate them into technical requirements.
+          </p>
 
-            <p class="paragraph">
-              When I'm not programming, I'm traveling, exercising or eating.
-            </p>
-          </div>
-          <div class="col-1-of-2 fourth">
-            <img
-              srcset="img/pie-small.jpg 300w, img/pie.jpg 3024w"
-              sizes="(max-width: 900px) 50vw, (max-width: 600px) 75vw, 1000px"
-              alt="Adam eating apple pie in Amsterdam"
-              class="about-me__img"
-              src="img/pie.jpg"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="section-projects u-center-text" id="projects">
-        <div class="u-margin-top-huge">
-          <h2 class="heading-secondary u-margin-bottom-medium">
-            Featured Projects
-          </h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-1-of-3">
-            <div class="box">
-              <div class="box__project">
-                <a
-                  href="https://books-to-read-app.herokuapp.com"
-                  target="”_blank”"
-                  rel="noopener noreferrer"
-                >
-                  <div class="box__picture box__picture--2">
-                    &nbsp;
-                  </div>
-                </a>
-                <h4 class="box__heading">
-                  <a
-                    href="https://books-to-read-app.herokuapp.com"
-                    target="”_blank”"
-                    rel="noopener noreferrer"
-                    class="box__heading-span box__heading-span--1 project-link"
-                    >Book Tracker
-                  </a>
-                </h4>
-                <div class="box__details">
-                  <ul>
-                    <li>
-                      <span data-tooltip="React" data-tooltip-location="top"><i class="fab fa-2x fa-react"></i></span>
-                      <span data-tooltip="Node" data-tooltip-location="top"><i data-tooltip="Node" class="fab fa-2x fa-node-js"></i></span>
-                      <span data-tooltip="MongoDB" data-tooltip-location="top"><i class="fas fa-2x fa-leaf"></i></span>
-                      <span data-tooltip="CSS" data-tooltip-location="top"><i data-tooltip="CSS" class="fab fa-2x fa-css3-alt"></i></span>
-                    </li>
-                  </ul>
-                  <a
-                    href="https://books-to-read-app.herokuapp.com"
-                    target="”_blank”"
-                    rel="noopener noreferrer"
-                    class="btn btn--gold u-margin-bottom-small"
-                    >Demo</a
-                  >
-                  <a
-                    href="https://github.com/adambrikman/books-to-read"
-                    target="”_blank”"
-                    rel="noopener noreferrer"
-                    class="btn btn--gold"
-                    >View code</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-1-of-3">
-            <div class="box">
-              <div class="box__project">
-                <a
-                  href="https://react-lights-out-game.herokuapp.com/"
-                  target="”_blank”"
-                  rel="noopener noreferrer"
-                >
-                  <div class="box__picture box__picture--3">
-                    &nbsp;
-                  </div>
-                </a>
-                <h4 class="box__heading">
-                  <a
-                    href="https://react-lights-out-game.herokuapp.com/"
-                    target="”_blank”"
-                    rel="noopener noreferrer"
-                    class="box__heading-span box__heading-span--1 project-link"
-                    >Lights Out Game
-                  </a>
-                </h4>
-                <div class="box__details">
-                  <ul>
-                    <li>
-                      <span data-tooltip="React" data-tooltip-location="top"><i class="fab fa-2x fa-react"></i></span>
-                      <span data-tooltip="JavaScript" data-tooltip-location="top"><i class="fab fa-2x fa-js-square"></i></span>
-                      <span data-tooltip="CSS" data-tooltip-location="top"><i data-tooltip="CSS" class="fab fa-2x fa-css3-alt"></i></span>
-                    </li>
-                  </ul>
-                  <a
-                    href="https://react-lights-out-game.herokuapp.com/"
-                    target="”_blank”"
-                    rel="noopener noreferrer"
-                    class="btn btn--gold u-margin-bottom-small"
-                    >Demo</a
-                  >
-                  <a
-                    href="https://github.com/adambrikman/lights-out"
-                    target="”_blank”"
-                    rel="noopener noreferrer"
-                    class="btn btn--gold"
-                    >View code</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-1-of-3">
-            <div class="box">
-              <div class="box__project">
-                <a
-                  href="https://brev-i.herokuapp.com/"
-                  target="”_blank”"
-                  rel="noopener noreferrer"
-                >
-                  <div class="box__picture box__picture--1">
-                    &nbsp;
-                  </div>
-                </a>
-                <h4 class="box__heading">
-                  <a
-                    href="https://brev-i.herokuapp.com/"
-                    target="”_blank”"
-                    rel="noopener noreferrer"
-                    class="box__heading-span box__heading-span--1 project-link"
-                    >URL Shortener
-                  </a>
-                </h4>
-                <div class="box__details">
-                  <ul>
-                    <li>
-                      <span data-tooltip="Node" data-tooltip-location="top"><i data-tooltip="Node" class="fab fa-2x fa-node-js"></i></span>
-                      <span data-tooltip="JavaScript" data-tooltip-location="top"><i class="fab fa-2x fa-js-square"></i></span>
-                      <span data-tooltip="HTML" data-tooltip-location="top"><i class="fab fa-2x fa-html5"></i></span>
-                      <span data-tooltip="CSS" data-tooltip-location="top"><i data-tooltip="CSS" class="fab fa-2x fa-css3-alt"></i></span>
-                    </li>
-                  </ul>
-                  <a
-                    href="https://brev-i.herokuapp.com/"
-                    target="”_blank”"
-                    rel="noopener noreferrer"
-                    class="btn btn--gold u-margin-bottom-small"
-                    >Demo</a
-                  >
-                  <a
-                    href="https://github.com/adambrikman/url-shortener"
-                    target="”_blank”"
-                    rel="noopener noreferrer"
-                    class="btn btn--gold"
-                    >View code</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="blurb u-margin-bottom-medium">
-            Feel free to check out my other work:
-          </div>
-          <a
-            href="https://github.com/adambrikman"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-4x fa-github u-left-right-margins-medium"></i>
-          </a>
-          <a
-            href="https://codepen.io/adambrikman/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-4x fa-codepen u-left-right-margins-medium"></i>
-          </a>
-          <a
-            href="https://www.youtube.com/watch?v=AuYgaZ_2APw&list=PLqIGoCQFjyo5ZPQW9OqdFcP2ze9L2HktO"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fab fa-4x fa-youtube u-left-right-margins-medium"></i>
-          </a>
-        </div>
-      </section>
-
-      <section class="section-contact u-center-text" id="contact">
-        <div class="contact__form">
-          <div class="u-margin-top-huge u-margin-bottom-small">
-            <h2 class="heading-secondary">
-              Contact Me
-            </h2>
-          </div>
-          <p class="contact__form--text blurb u-center-text">
-            I am currently seeking out a software engineer position. Feel free
-            to contact me via
-            <a
-              href="https://www.linkedin.com/in/adambrikman/"
-              target="_blank"
-              class="outbound-link"
-              >LinkedIn</a
-            >
-            or send me an e-mail below:
+          <p class="paragraph">
+            When I'm not programming, I'm traveling, exercising or eating.
           </p>
         </div>
+        <div class="col-1-of-2 fourth">
+          <img srcset="img/pie-small.jpg 300w, img/pie.jpg 3024w"
+            sizes="(max-width: 900px) 50vw, (max-width: 600px) 75vw, 1000px" alt="Adam eating apple pie in Amsterdam"
+            class="about-me__img" src="img/pie.jpg" />
+        </div>
+      </div>
+    </section>
 
-        <form
-          action="https://getform.io/f/63974a73-8303-4bc8-aa6e-e3b03bf24a65"
-          method="POST"
-          class="form"
-        >
-          <div class="form__group">
-            <input
-              type="text"
-              class="form__input form__text"
-              placeholder="&nbsp;"
-              id="name"
-              name="name"
-              required
-            />
-            <label for="name" class="form__label">&nbsp;Name*</label>
+    <section class="section-projects u-center-text" id="projects">
+      <div class="u-margin-top-huge">
+        <h2 class="heading-secondary u-margin-bottom-medium">
+          Featured Projects
+        </h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-1-of-3">
+          <div class="box">
+            <div class="box__project">
+              <a href="https://books-to-read-app.herokuapp.com" target="”_blank”" rel="noopener noreferrer">
+                <div class="box__picture box__picture--2">
+                  &nbsp;
+                </div>
+              </a>
+              <h4 class="box__heading">
+                <a href="https://books-to-read-app.herokuapp.com" target="”_blank”" rel="noopener noreferrer"
+                  class="box__heading-span box__heading-span--1 project-link">Book Tracker
+                </a>
+              </h4>
+              <div class="box__details">
+                <ul>
+                  <li>
+                    <span data-tooltip="React" data-tooltip-location="top"><i class="fab fa-2x fa-react"></i></span>
+                    <span data-tooltip="Node" data-tooltip-location="top"><i data-tooltip="Node"
+                        class="fab fa-2x fa-node-js"></i></span>
+                    <span data-tooltip="MongoDB" data-tooltip-location="top"><i class="fas fa-2x fa-leaf"></i></span>
+                    <span data-tooltip="CSS" data-tooltip-location="top"><i data-tooltip="CSS"
+                        class="fab fa-2x fa-css3-alt"></i></span>
+                  </li>
+                </ul>
+                <a href="https://books-to-read-app.herokuapp.com" target="”_blank”" rel="noopener noreferrer"
+                  class="btn u-margin-bottom-small btn--project alternative">Demo</a>
+                <a href="https://github.com/adambrikman/books-to-read" target="”_blank”" rel="noopener noreferrer"
+                  class="btn btn--project alternative">View code</a>
+              </div>
+            </div>
           </div>
+        </div>
 
-          <div class="form__group">
-            <input
-              type="email"
-              class="form__input form__text"
-              placeholder="&nbsp;"
-              id="email"
-              name="email"
-              required
-            />
-            <label for="email" class="form__label">E-mail address*</label>
+        <div class="col-1-of-3">
+          <div class="box">
+            <div class="box__project">
+              <a href="https://react-lights-out-game.herokuapp.com/" target="”_blank”" rel="noopener noreferrer">
+                <div class="box__picture box__picture--3">
+                  &nbsp;
+                </div>
+              </a>
+              <h4 class="box__heading">
+                <a href="https://react-lights-out-game.herokuapp.com/" target="”_blank”" rel="noopener noreferrer"
+                  class="box__heading-span box__heading-span--1 project-link">Lights Out Game
+                </a>
+              </h4>
+              <div class="box__details">
+                <ul>
+                  <li>
+                    <span data-tooltip="React" data-tooltip-location="top"><i class="fab fa-2x fa-react"></i></span>
+                    <span data-tooltip="JavaScript" data-tooltip-location="top"><i
+                        class="fab fa-2x fa-js-square"></i></span>
+                    <span data-tooltip="CSS" data-tooltip-location="top"><i data-tooltip="CSS"
+                        class="fab fa-2x fa-css3-alt"></i></span>
+                  </li>
+                </ul>
+                <a href="https://react-lights-out-game.herokuapp.com/" target="”_blank”" rel="noopener noreferrer"
+                  class="btn u-margin-bottom-small btn--project alternative">Demo</a>
+                <a href="https://github.com/adambrikman/lights-out" target="”_blank”" rel="noopener noreferrer"
+                  class="btn btn--project alternative">View code</a>
+              </div>
+            </div>
           </div>
+        </div>
 
-          <div class="form__group">
-            <textarea
-              rows="4"
-              cols="30"
-              class="form__message form__text"
-              id="message"
-              name="message"
-              required
-            ></textarea>
-            <label for="message" class="form__label--message">Message*</label>
+        <div class="col-1-of-3">
+          <div class="box">
+            <div class="box__project">
+              <a href="https://brev-i.herokuapp.com/" target="”_blank”" rel="noopener noreferrer">
+                <div class="box__picture box__picture--1">
+                  &nbsp;
+                </div>
+              </a>
+              <h4 class="box__heading">
+                <a href="https://brev-i.herokuapp.com/" target="”_blank”" rel="noopener noreferrer"
+                  class="box__heading-span box__heading-span--1 project-link">URL Shortener
+                </a>
+              </h4>
+              <div class="box__details">
+                <ul>
+                  <li>
+                    <span data-tooltip="Node" data-tooltip-location="top"><i data-tooltip="Node"
+                        class="fab fa-2x fa-node-js"></i></span>
+                    <span data-tooltip="JavaScript" data-tooltip-location="top"><i
+                        class="fab fa-2x fa-js-square"></i></span>
+                    <span data-tooltip="HTML" data-tooltip-location="top"><i class="fab fa-2x fa-html5"></i></span>
+                    <span data-tooltip="CSS" data-tooltip-location="top"><i data-tooltip="CSS"
+                        class="fab fa-2x fa-css3-alt"></i></span>
+                  </li>
+                </ul>
+                <a href="https://brev-i.herokuapp.com/" target="”_blank”" rel="noopener noreferrer"
+                  class="btn u-margin-bottom-small btn--project alternative">Demo</a>
+                <a href="https://github.com/adambrikman/url-shortener" target="”_blank”" rel="noopener noreferrer"
+                  class="btn btn--project alternative">View code</a>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
 
-          <button id="send-btn" class="form__submit btn btn--gold btn--email">
-            Send e-mail
-            <i class="far fa-paper-plane"></i>
-          </button>
-        </form>
-      </section>
+      <div class="row">
+        <div class="blurb u-margin-bottom-medium">
+          Feel free to check out my other work:
+        </div>
+        <a href="https://github.com/adambrikman" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-4x fa-github u-left-right-margins-medium"></i>
+        </a>
+        <a href="https://codepen.io/adambrikman/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-4x fa-codepen u-left-right-margins-medium"></i>
+        </a>
+        <a href="https://www.youtube.com/watch?v=AuYgaZ_2APw&list=PLqIGoCQFjyo5ZPQW9OqdFcP2ze9L2HktO" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fab fa-4x fa-youtube u-left-right-margins-medium"></i>
+        </a>
+      </div>
+    </section>
 
-      <div id="snackbar">E-mail Sent!</div>
-    </main>
-  </body>
+    <section class="section-contact u-center-text" id="contact">
+      <div class="contact__form">
+        <div class="u-margin-top-huge u-margin-bottom-small">
+          <h2 class="heading-secondary">
+            Contact Me
+          </h2>
+        </div>
+        <p class="contact__form--text blurb u-center-text">
+          I am currently seeking out a software engineer position. Feel free
+          to contact me via
+          <a href="https://www.linkedin.com/in/adambrikman/" target="_blank" class="outbound-link">LinkedIn</a>
+          or send me an e-mail below:
+        </p>
+      </div>
 
-  <script type="text/javascript" src="js/scripts.js"></script>
+      <form action="https://getform.io/f/63974a73-8303-4bc8-aa6e-e3b03bf24a65" method="POST" class="form">
+        <div class="form__group">
+          <input type="text" class="form__input form__text" placeholder="&nbsp;" id="name" name="name" required />
+          <label for="name" class="form__label">&nbsp;Name*</label>
+        </div>
+
+        <div class="form__group">
+          <input type="email" class="form__input form__text" placeholder="&nbsp;" id="email" name="email" required />
+          <label for="email" class="form__label">E-mail address*</label>
+        </div>
+
+        <div class="form__group">
+          <textarea rows="4" cols="30" class="form__message form__text" id="message" name="message" required></textarea>
+          <label for="message" class="form__label--message">Message*</label>
+        </div>
+
+        <button id="send-btn" class="form__submit btn btn--cta btn--gold btn--email">
+          Send e-mail
+          <i class="far fa-paper-plane"></i>
+        </button>
+      </form>
+    </section>
+
+    <div id="snackbar">E-mail Sent!</div>
+  </main>
+</body>
+
+<script type="text/javascript" src="js/scripts.js"></script>
+
 </html>

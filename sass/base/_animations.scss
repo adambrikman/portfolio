@@ -102,3 +102,30 @@
     opacity: 0;
   }
 }
+
+// Project button animations
+@keyframes move {
+  30%,
+  36% {
+      transform: translateY(calc(-6px * var(--move))) translateZ(0) rotate(calc(-13deg * var(--rotate) * var(--part)));
+  }
+  50% {
+      transform: translateY(calc(3px * var(--move))) translateZ(0) rotate(calc(6deg * var(--rotate) * var(--part)));
+  }
+  70% {
+      transform: translateY(calc(-2px * var(--move))) translateZ(0) rotate(calc(-3deg * var(--rotate) * var(--part)));
+  }
+}
+
+@keyframes move-out {
+  30%,
+  36% {
+      transform: translateY(calc(6px * var(--move))) translateZ(0) rotate(calc(13deg * var(--rotate) * var(--part)));
+  }
+  50% {
+      transform: translateY(calc(-3px * var(--move))) translateZ(0) rotate(calc(-6deg * var(--rotate) * var(--part)));
+  }
+  70% {
+      transform: translateY(calc(2px * var(--move))) translateZ(0) rotate(calc(3deg * var(--rotate) * var(--part)));
+  }
+}
